@@ -1,7 +1,4 @@
-"""
-	This pre-code is a nice starting point, but you can
-	change it to fit your needs.
-"""
+
 import numpy as np
 from sklearn.metrics import confusion_matrix
 from sklearn.utils import shuffle
@@ -190,7 +187,6 @@ class mlp:
 		plt.imshow(cnf_matrix)
 		title = 'Confusion Matrix for ' + str(self.nhidden) + ' nodes'
 		plt.title(title)
-		#plt.colorbar()
 		tick_marks = np.arange(8)
 		classes = np.arange(8)
 		plt.xticks(tick_marks, classes)
