@@ -1,10 +1,5 @@
 #!/usr/bin/env Python3
-'''
-    This file will read in data and start your mlp network.
-    You can leave this file mostly untouched and do your
-    mlp implementation in mlp.py.
-'''
-# Feel free to use numpy in your MLP if you like to.
+
 import numpy as np
 import mlp
 
@@ -58,9 +53,6 @@ for node in hidden:
 
 	# Run training:
 	net.earlystopping(train, train_targets, valid, valid_targets)
-	# NOTE: You can also call train method from here,
-	#       and make train use earlystopping method.
-	#       This is a matter of preference.
 
 	# Check how well the network performed:
 	net.confusion(test,test_targets)
